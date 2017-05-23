@@ -15,21 +15,58 @@
         android:layout_marginBottom="16dp"
         android:text="Quanity" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/substract_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textSize="16sp"
+            android:id="@+id/add_btn"/>
+
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/text_zero"
+        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_below="@id/text_quanity"
         android:textSize="16sp"
         android:textColor="@android:color/black"
-        android:text="0" />
+        android:text="price"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="0"/>
 
     <Button
         android:id="@+id/button_order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_zero"
         android:layout_marginTop="16sp"
         android:text="ORDER" />
 
